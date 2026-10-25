@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MK Holidays - Unfold Your Next Journey</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">✨</span>MK<span>Holidays</span>
+      </a>
+
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#hotels">Hotels</a></li>
+          <li><a href="#restaurants">Dining</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#search" class="btn btn-secondary">Search</a>
+        <a href="#contact" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT AREA -->
+  <main>
+    <!-- HERO & SEARCH SECTION -->
+    <section class="hero" id="hero">
+      <div class="container hero-content">
+        <span class="hero-badge">Explore Beyond Boundaries</span>
+        <h1>Craft Your Unique Journey Across the Globe</h1>
+        <p>Discover handpicked destinations, luxury stays, and memorable culinary spots tailored to your personal travel style.</p>
+
+        <!-- Search Bar with Filters -->
+        <div class="search-box" id="search">
+          <form class="search-form">
+            <div class="input-group">
+              <label for="destination">Where to?</label>
+              <input type="text" id="destination" placeholder="City, region, or landmark">
+            </div>
+
+            <div class="input-group">
+              <label for="category">Category</label>
+              <select id="category">
+                <option value="all">All Experiences</option>
+                <option value="hotels">Stays & Hotels</option>
+                <option value="flights">Flights</option>
+                <option value="dining">Restaurants</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="price">Budget</label>
+              <select id="price">
+                <option value="any">Any Price</option>
+                <option value="budget">$ (Economy)</option>
+                <option value="mid">$$ (Mid-Range)</option>
+                <option value="luxury">$$$ (Luxury)</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="rating">Min Rating</label>
+              <select id="rating">
+                <option value="any">Any Rating</option>
+                <option value="4">★ 4.0 & above</option>
+                <option value="4.5">★ 4.5 & above</option>
+                <option value="4.8">★ 4.8 & above</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-search">Explore</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED DESTINATIONS SECTION -->
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Trending Places</span>
+          <h2>Featured Destinations</h2>
+          <p>Curated escapes featuring breathtaking landscapes and rich culture.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- Destination Card 1 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Tropical Beach Escape">
+              <span class="card-badge">Top Pick</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.9 (120 reviews)</span>
+                <span class="location">Maldives</span>
+              </div>
+              <h3 class="card-title">Azure Lagoon Resort & Atolls</h3>
+              <p class="card-desc">Crystal-clear waters, overwater villas, and private coral reef diving experiences.</p>
+              <div class="card-footer">
+                <span class="price">From <strong>$280</strong>/night</span>
+                <a href="#" class="btn btn-sm">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination Card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" alt="Historic Kyoto Streets">
+              <span class="card-badge">Cultural</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.8 (95 reviews)</span>
+                <span class="location">Kyoto, Japan</span>
+              </div>
+              <h3 class="card-title">Bamboo Alley & Historic Shrines</h3>
+              <p class="card-desc">Immerse yourself in centuries of tradition, peaceful gardens, and authentic tea houses.</p>
+              <div class="card-footer">
+                <span class="price">From <strong>$150</strong>/day</span>
+                <a href="#" class="btn btn-sm">Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination Card 3 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=800&q=80" alt="Cinque Terre Coastline">
+              <span class="card-badge">Scenic</span>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.7 (88 reviews)</span>
+                <span class="location">Liguria, Italy</span>
+              </div>
+              <h3 class="card-title">Cinque Terre Coastal Wonders</h3>
+              <p class="card-desc">Colorful cliffside villages overlooking the Mediterranean with world-class hiking trails.</p>
+              <div class="card-footer">
+                <span class="price">From <strong>$195</strong>/day</span>
+                <a href="#" class="btn btn-sm">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR HOTELS SECTION -->
+    <section class="section bg-light" id="hotels">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Comfort & Luxury</span>
+          <h2>Popular Stays & Hotels</h2>
+          <p>Handpicked accommodations designed for ultimate relaxation.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- Hotel Card 1 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Luxury Hotel Suite">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.9 (210 reviews)</span>
+                <span class="location">Santorini, Greece</span>
+              </div>
+              <h3 class="card-title">Cliffside Horizon Suites</h3>
+              <p class="card-desc">Infinity pools with caldera views, private balconies, and complimentary organic breakfast.</p>
+              <div class="card-footer">
+                <span class="price">From <strong>$320</strong>/night</span>
+                <a href="#" class="btn btn-sm">Book Stay</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel Card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Mountain Chalet">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.8 (142 reviews)</span>
+                <span class="location">Swiss Alps, Switzerland</span>
+              </div>
+              <h3 class="card-title">Alpine Crest Chalet & Spa</h3>
+              <p class="card-desc">Ski-in/ski-out access, cozy fireplace rooms, and outdoor heated thermal pools.</p>
+              <div class="card-footer">
+                <span class="price">From <strong>$410</strong>/night</span>
+                <a href="#" class="btn btn-sm">Book Stay</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hotel Card 3 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=800&q=80" alt="Eco Jungle Resort">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.7 (118 reviews)</span>
+                <span class="location">Ubud, Bali</span>
+              </div>
+              <h3 class="card-title">Verdant Canopy Eco Lodge</h3>
+              <p class="card-desc">Nestled deep within the rainforest featuring yoga pavilions and wellness retreats.</p>
+              <div class="card-footer">
+                <span class="price">From <strong>$160</strong>/night</span>
+                <a href="#" class="btn btn-sm">Book Stay</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP RESTAURANTS SECTION -->
+    <section class="section" id="restaurants">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Gourmet Experiences</span>
+          <h2>Top-Rated Restaurants</h2>
+          <p>Savor authentic local flavors and award-winning dining spots.</p>
+        </div>
+
+        <div class="card-grid">
+          <!-- Restaurant Card 1 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Fine Dining Table">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.9 (310 reviews)</span>
+                <span class="location">Paris, France</span>
+              </div>
+              <h3 class="card-title">L'Étoile Bistro & Wine Bar</h3>
+              <p class="card-desc">Classic French cuisine reimagined with seasonal herbs and sommelier wine pairings.</p>
+              <div class="card-footer">
+                <span class="price">Avg. <strong>$85</strong>/person</span>
+                <a href="#" class="btn btn-sm">Reserve</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Restaurant Card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Seafood Restaurant">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.8 (180 reviews)</span>
+                <span class="location">Barcelona, Spain</span>
+              </div>
+              <h3 class="card-title">Mar y Sombra Tapas Lounge</h3>
+              <p class="card-desc">Fresh Mediterranean seafood tapas served in an open-air beachfront setting.</p>
+              <div class="card-footer">
+                <span class="price">Avg. <strong>$50</strong>/person</span>
+                <a href="#" class="btn btn-sm">Reserve</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Restaurant Card 3 -->
+          <div class="card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Rooftop Grill">
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="rating">★ 4.8 (240 reviews)</span>
+                <span class="location">Bangkok, Thailand</span>
+              </div>
+              <h3 class="card-title">Skyline Thai Grill & Bar</h3>
+              <p class="card-desc">Panoramic rooftop city views with spicy street-food elevated into fine dining.</p>
+              <div class="card-footer">
+                <span class="price">Avg. <strong>$45</strong>/person</span>
+                <a href="#" class="btn btn-sm">Reserve</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-icon">✨</span> MK<span>Holidays</span>
+        </a>
+        <p>WanderLoom is your independent travel curator, connecting modern explorers with unique stays, culinary spots, and memorable destinations.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#hotels">Hotels & Stays</a></li>
+          <li><a href="#restaurants">Restaurants</a></li>
+          <li><a href="#experiences">Guided Tours</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press & Media</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Travel Digest</h4>
+        <p>Get weekly curated travel guides directly in your inbox.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 MK Holidays Travel Inc. Designed for practical portfolio showcase.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
